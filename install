@@ -1,0 +1,28 @@
+sudo apt install cmake
+
+python3 -m venv venv
+source venv/bin/activate
+
+# install dlib
+git clone https://github.com/davisking/dlib.git
+cd dlib
+mkdir build; cd build; cmake ..; cmake --build .
+
+cd ..
+python setup.py install
+
+cd ..
+pip install -r requirements.txt
+
+rm -rf dlib
+mkdir face_unlock/faces
+
+
+echo "*** Installation complete ***"
+echo "Please put .jpg photo of your face into face_unlock/faces folder"
+
+
+
+
+
+
