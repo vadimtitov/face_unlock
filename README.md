@@ -1,2 +1,2 @@
-# face_unlock
+# Face Unlock
 Unlock screen with your face
